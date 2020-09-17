@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>all</title>
+</head>
+<body>
+<h1>循环遍历复杂集合:list -> Map -> List -> User</h1>
+
+<div th:each="allmap:${all}">
+<div th:each="map:${allmap}">
+    count::<span th:text="${mapStat.count}"></span>
+    Map 集合的 key:<span th:text="${map.key}"></span><br/>
+   map 集合的value：--------------------------
+    <div th:each="ListMap:${map.value}">
+        count::;<span th:text="${ListMapStat.count}"></span>
+        id:<span th:text="${ListMap.id}"></span>
+        name::<span th:text="${ListMap.age}"></span>
+        age::<span th:text="${ListMap.name}"></span>
+    </div><br>
+    ------------------------------------------------
+
+</div>
+</div>
+</body>
+</html>

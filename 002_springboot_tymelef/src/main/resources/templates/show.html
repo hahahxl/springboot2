@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>show</title>
+    <script th:src="@{/js/jquery-1.11.1-min.js}"></script>
+    <script>
+        $(function () {
+           // alert("dfdgdfg");
+        });
+    </script>
+</head>
+<body>
+<h1>show</h1>
+
+<div th:text="${data}"></div>
+<div th:text="${ff}"></div>
+<div th:text="${user.id}"></div>
+<div th:text="${user.name}"></div>
+
+<!--
+URL 表达式
+-->
+<a th:href="@{https://www.baidu.com/}">点击跳转至百度</a>
+<div>ffffffffffffffff</div>
+<div>gdgf</div>
+<div>gg</div>
+<div></div>
+<a th:href="@{/user2}">跳转到user2</a>
+<h1>fdsg</h1>
+<h1>fdffffffffffffffffffff</h1>
+</body>
+</html>

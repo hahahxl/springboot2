@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="userArrays:${userArrays}">
+    <span th:text="${userArraysStat.index}"></span>
+    <span th:text="${userArraysStat.count}"></span>
+    <span th:text="${userArrays.id}"></span>
+    <span th:text="${userArrays.age}"></span>
+    <span th:text="${userArrays.name}"></span>
+
+</div>
+</body>
+</html>
